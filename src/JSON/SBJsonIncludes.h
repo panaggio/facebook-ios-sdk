@@ -53,22 +53,5 @@
 // header name for the Mac framework, the iOS static library and when
 // someone just copies the classes into their project.
 
-#if SBJSON_IS_LIBRARY
-
-#import <JSON/SBJsonParser.h>
-#import <JSON/SBJsonWriter.h>
-#import <JSON/SBJsonStreamParser.h>
-#import <JSON/SBJsonStreamParserAdapter.h>
-#import <JSON/SBJsonStreamWriter.h>
-#import <JSON/NSObject+JSON.h>
-
-#else
-
-#import "SBJsonParser.h"
-#import "SBJsonWriter.h"
-#import "SBJsonStreamWriter.h"
-#import "SBJsonStreamParser.h"
-#import "SBJsonStreamParserAdapter.h"
-#import "NSObject+JSON.h"
-
-#endif
+#import <SBJSON/SBJsonParser.h>
+#import <SBJSON/SBJsonWriter.h>
